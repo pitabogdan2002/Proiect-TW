@@ -1,0 +1,51 @@
+body
+{
+    background-image: url(https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400085/98944776-vector-travel-pattern-travel-seamless-background.jpg);
+    margin: 0px;
+    padding:0px;
+    align-items: center;
+}
+body> div:first-of-type
+{
+    background-image: url(https://us.123rf.com/450wm/jakkapan/jakkapan1608/jakkapan160800091/61684349-the-colorful-artwork-painted-on-wood-material-for-vintage-wallpaper-background-.jpg?ver=6);
+    padding:0px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.meniu, .meniu ul
+{
+    list-style-type: none;
+}
+.meniu
+{
+    background-color: red;
+    
+}
+.meniu > li 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.meniu > li:hover > ul
+{
+    display:contents;
+
+}
+.meniu > li > ul{
+    display: none;
+    font-size: 20px;
+}
+.navigare > li > ul >li
+{
+    border: 2px solid black; 
+}
+.navigare 
+{
+    font-size: 40px;
+}
+#poza1
+{
+    width: 700px;
+    height: 400px;
+}
