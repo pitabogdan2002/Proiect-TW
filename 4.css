@@ -1,0 +1,136 @@
+body
+{
+    background-image: url(https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400085/98944776-vector-travel-pattern-travel-seamless-background.jpg);
+    margin: 0px;
+    padding:0px;
+    align-items: center;
+}
+body> div:first-of-type
+{
+    background-image: url(https://st.depositphotos.com/1510192/4921/v/950/depositphotos_49214981-stock-illustration-city-map-abstract-seamless-pattern.jpg);
+    padding:0px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+aside
+{
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+}
+#pozaaside
+{
+    width: 220px;
+    height: 180px;
+}
+.meniu, .meniu ul
+{
+    list-style-type: none;
+}
+.meniu
+{
+    background-color: red;
+    
+}
+.meniu > li 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.meniu > li:hover > ul
+{
+    display:contents;
+
+}
+.meniu > li > ul{
+    display: none;
+    font-size: 20px;
+}
+.navigare > li > ul >li
+{
+    border: 2px solid black; 
+}
+.navigare 
+{
+    font-size: 40px;
+}
+
+#poza1
+{
+    width: 700px;
+    height: 400px;
+}
+#poza2
+{
+    width: 350px;
+    height: 300px;
+}
+.flex
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 400px;
+}
+.flex > img
+{
+    margin: 10px;
+    border: 10px dotted aqua;
+}
+.flex :nth-child(1)
+{
+    flex: 2;
+}
+.flex :nth-child(3)
+{
+    flex: 2;
+}
+.flex :nth-child(5)
+{
+    flex: 2;
+}
+
+@keyframes bordura
+{
+    0%   {border-color: aqua;}
+    25%  {border-color: pink;}
+    50%  {border-color: purple;}
+    100% {border-color: orange;}
+}
+.flex > img
+{
+    animation: bordura 3s linear 0s infinite alternate ;
+}
+@keyframes titlu
+{
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+.titlu
+{
+    animation: titlu 5s ease-in 0s infinite reverse;
+}
+@media screen and (max-width: 700px)
+{
+    .detalii
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        color: purple;
+    }
+}
+@media screen and (min-width: 700px)
+{
+    .detalii
+    {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: red;
+    }
+}
+

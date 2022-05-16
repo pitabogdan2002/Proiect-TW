@@ -1,0 +1,129 @@
+body
+{
+    background-image: url(https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400085/98944776-vector-travel-pattern-travel-seamless-background.jpg);
+    margin: 0px;
+    padding:0px;
+    align-items: center;
+}
+body> div:first-of-type
+{
+    background-image: url(https://st.depositphotos.com/1510192/4921/v/950/depositphotos_49214981-stock-illustration-city-map-abstract-seamless-pattern.jpg);
+    padding:0px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.meniu, .meniu ul
+{
+    list-style-type: none;
+}
+.meniu
+{
+    background-color: red;
+    
+}
+.meniu > li 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.meniu > li:hover > ul
+{
+    display:contents;
+
+}
+.meniu > li > ul{
+    display: none;
+    font-size: 20px;
+}
+.navigare > li > ul >li
+{
+    border: 2px solid black; 
+}
+.navigare 
+{
+    font-size: 40px;
+}
+
+
+aside
+{
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+}
+#pozaaside
+{
+    width: 220px;
+    height: 180px;
+}
+.detalii p:first-of-type::first-letter
+{
+    font-size: 200%;
+}
+.detalii p:first-of-type
+{
+    font-size: 200%;
+}
+.detalii > p
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:justify;
+    margin-left: 20px;
+}
+.detalii p:last-of-type
+{
+    text-align: center;
+    font-weight: bold;
+}
+.detalii p:last-of-type::before
+{
+    content: '👉';
+    color: orangered;
+    font-weight: 500;
+    font-size: 200%;
+}
+.detalii p:last-of-type::after
+{
+    content: '👈';
+    color: orangered;
+    font-weight: 500;
+    font-size: 200%;
+}
+#poza1
+{
+    width: 700px;
+    height: 400px;
+}
+.pictures > span img:nth-of-type(1)
+{
+    margin: 10px;
+    border: 0.1cm yellowgreen dashed;
+}
+.pictures > span img:nth-of-type(2)
+{
+    margin: 10px;
+    border:  0.1cm dotted blue;
+}
+#poza2
+{
+    width: 350px;
+    height: 300px;
+}
+#contor
+{
+    margin: 20px;
+}
+
+.tabel, th, td
+{
+    border: 5px solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: purple;
+    background-color: azure;
+}

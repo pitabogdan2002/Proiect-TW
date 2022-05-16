@@ -4,6 +4,7 @@
         <TITLE> Călătorind în jurul lumii...</TITLE>
         <link rel="icon"  href="https://img.huffingtonpost.com/asset/5fa3fd152400000a1f9ae10a.jpeg?cache=ZxsH6wZyAA&ops=800_450">
         <link rel="stylesheet" media="all" type="text/css" href="1.css" />
+        <script src="1.js"></script>
     </HEAD>
     <BODY>
         <div class="continut" align="center">
@@ -11,11 +12,12 @@
             <img src="https://previews.123rf.com/images/mikalaimanyshau/mikalaimanyshau1412/mikalaimanyshau141200015/34925939-travel-banner-flat-vector-illustration-.jpg" width="800" height="270">
         </div>
         <ul class="meniu">
-            <li> Meniu<ul>
-            <li class="current"><a href="index.html" >Home</a></li>
-            <li><a href="istorie.html" >Paris</a></li>
-            <li><a href="monumente.html"  >New York</a></li>
-            <li><a href="prin_paris.html" >Tokyo</a></li>
+            <li > Meniu
+            <ul class="lista">
+            <li class="current"><a href="main.html" >Home</a></li>
+            <li><a href="Paris.html" >Paris</a></li>
+            <li><a href="New York.html"  >New York</a></li>
+            <li><a href="Tokyo.html" >Tokyo</a></li>
             </ul>
             </li>
         </ul>
@@ -23,6 +25,53 @@
         <h1>Ce oferă acest site?</h1>
         <p> Acesta este un blog de calatorii, destinat mai ales celor care sunt indecisi cu privire la urmatoarea destinatie de vacanta. Imbarca-te in aceasta calatoire alaturi de mine si afla care sunt cele mai frumoase locatii ce nu trebuie sa lipseasca din planurile tale viitoare de vacanta</p>
         <img src="https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg" id="poza1">
+        <article>
+            <button id="addImage"> Adaugă poză</button>
+            <button id="removeImage"> Șterge ultima poză</button>
+            <div class="poze">
+            </div>
+        </article>
+        
+        <form class="formular" onsubmit="validare()">
+            <H2>
+                Completați următorul formular:
+            </H2>
+          <input type="text" placeholder="Nume" name="text"  id ="nume" required/>
+          <input type="text" placeholder="Prenume" name="text2" id="prenume" required/>
+          <input type="email" placeholder="Email..." name="email" id="mail" required/>
+          <div>
+            <label>Sex:</label>
+            <select>
+              <option >M</option>
+              <option >F</option>
+              <option >Altul</option>
+            </select>
+          </div>
+          <input type="number" placeholder="Varsta" id="varsta"/>
+          <label>Data ultimei calatorii:</label>
+          <input type="date" value="00/00/0000" />
+          
+          
+          <label>Calatoresc des:</label>
+          <div>
+            <input type="radio" name="CalatorescDes" id="da"/>
+            <label for="golf">Da</label>
+            <input type="radio" name="CalatorescDes" id="uneori"/>
+            <label for="a_class">Uneori</label>
+            <input type="radio" name="CalatorescDes" id="nu"/>
+            <label for="l">Nu</label>
+          </div>
+          <textarea placeholder="Descire-ne ultima vacanta" rows="10" cols="30"></textarea>
+          <div>
+            <input type="checkbox" id="terms"/>
+            <label for="terms">Sunt de acord cu prelucrarea datelor cu caracter personal</label>
+          </div>
+        
+          <input type="reset"/>
+          <input type="submit" id="trimitere"/>
+        
+        
+        </form>
         <h2> Date despre autor</h2>
         <table class="center">
             <tr>

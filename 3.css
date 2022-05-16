@@ -13,6 +13,10 @@ body> div:first-of-type
     margin-right: auto;
     margin-left: auto;
 }
+#header
+{
+   text-align: center;
+}
 .meniu, .meniu ul
 {
     list-style-type: none;
@@ -44,41 +48,54 @@ body> div:first-of-type
 {
     font-size: 40px;
 }
+
+aside
+{
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+}
+#pozaaside
+{
+    width: 220px;
+    height: 180px;
+}
+
 #poza1
 {
-    width: 700px;
+    width: 300px;
     height: 400px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 }
-.poze  img
+#poza1:hover
 {
-    width: 700px;
-    height: 400px;
-    margin: 10px;
-    border:5px solid purple;
+    width:700px
 }
-button
+#poza2
 {
-    margin: 20px;
-    background-color: aqua;
-    border-color: red;
+    width: 350px;
+    height: 300px;
 }
-input:not([type="radio"]):not([type="checkbox"])
+.container
 {
-    display: block;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-left: 10px;
+
 }
-input
+.container img
 {
-    margin:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px red double;
+
 }
-.formular
-{
-    background-color: beige;
-    margin: 30px;
-}
-.formular h2
-{
-    color:red;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin:30px;
-}
+.poza.C {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
