@@ -1,0 +1,54 @@
+body
+{
+    background-image: url(https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400085/98944776-vector-travel-pattern-travel-seamless-background.jpg);
+    margin: 0px;
+    padding:0px;
+    align-items: center;
+}
+body> div:first-of-type
+{
+    background-image: url(https://st.depositphotos.com/1510192/4921/v/950/depositphotos_49214981-stock-illustration-city-map-abstract-seamless-pattern.jpg);
+    padding:0px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.input-field input {
+    padding: 0.8rem;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    color: white;
+    border-radius: 4px;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+h2
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: Purple;
+    background-color: aqua;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+form
+{
+    padding-bottom: 180px;
+}
