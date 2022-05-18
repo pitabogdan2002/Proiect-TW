@@ -1,5 +1,3 @@
-const { get } = require("http");
-
 window.onload = init;
 function init()
 {
@@ -17,6 +15,8 @@ function init()
         indexCulori=(indexCulori)%culori.length;
     }
     setInterval(schimbareCuloare, 2000);
+    document.getElementById('formularul').onsubmit = validare;
+    document.getElementById('adaugare').onclick = loadDoc;
 }
 const poze = [
     {URL: "https://busolatravel.ro/wp-content/uploads/2021/01/travel-world.jpg",},
@@ -59,3 +59,19 @@ function validare()
     return false;
 
 }
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.onload = function() {
+       var data = JSON.parse(this.responseText);
+       console.log(data[0]);
+    for(let i=0; i<data.length; i++)
+    {
+        var p = document.createElement("p");
+        p.innerHTML= "Veți găsi informații despre orașul " + data[i].name +  ", care se află în următoarea țara: " + data[i].Country +".";
+        document.querySelector("#demo").append(p);
+    }
+}
+    xhttp.open("GET", "date.json");
+    xhttp.send();
+  }

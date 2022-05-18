@@ -13,13 +13,27 @@ body> div:first-of-type
     margin-right: auto;
     margin-left: auto;
 }
+.logout
+ {
+    position: fixed;
+    padding: 16px;
+    right: 8px;
+    top: 8px;
+    background: orange;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
 .meniu, .meniu ul
 {
     list-style-type: none;
 }
 .meniu
 {
-    background-color: red;
+    background-image: url(https://img.graphicsurf.com/2019/10/travel-vector-free-seamless-pattern2.jpg);
+    margin:0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     
 }
 .meniu > li 
@@ -36,13 +50,21 @@ body> div:first-of-type
     display: none;
     font-size: 20px;
 }
-.navigare > li > ul >li
+.meniu > li > ul >li
 {
     border: 2px solid black; 
 }
-.navigare 
+.meniu
 {
     font-size: 40px;
+}
+h1
+{
+    color: blue;
+}
+#detalii
+{
+    color: purple;
 }
 #poza1
 {
@@ -61,6 +83,15 @@ button
     margin: 20px;
     background-color: aqua;
     border-color: red;
+}
+#demo > p
+{
+    border: 5px double green;
+    font-size: 20px;
+    background-color: white;
+    color: maroon;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 input:not([type="radio"]):not([type="checkbox"])
 {
@@ -81,4 +112,13 @@ input
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:30px;
+}
+.tabel, th, td
+{
+    border: 5px solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: purple;
+    background-color: azure;
 }

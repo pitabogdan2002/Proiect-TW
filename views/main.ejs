@@ -8,7 +8,7 @@
     </HEAD>
     <BODY>
         <div class="continut" align="center">
-          <button type="button"> <a href='http://localhost:4000/logout'>  Click Me! </a> </button> 
+          <button type="button" class="logout"> <a href='http://localhost:3000/logout'>  Log out </a> </button> 
         <div id="banner">
             <img src="https://previews.123rf.com/images/mikalaimanyshau/mikalaimanyshau1412/mikalaimanyshau141200015/34925939-travel-banner-flat-vector-illustration-.jpg" width="800" height="270">
         </div>
@@ -24,7 +24,7 @@
         </ul>
 
         <h1>Ce oferă acest site?</h1>
-        <p> Acesta este un blog de calatorii, destinat mai ales celor care sunt indecisi cu privire la urmatoarea destinatie de vacanta. Imbarca-te in aceasta calatoire alaturi de mine si afla care sunt cele mai frumoase locatii ce nu trebuie sa lipseasca din planurile tale viitoare de vacanta</p>
+        <p id="detalii"> Acesta este un blog de calatorii, destinat mai ales celor care sunt indecisi cu privire la urmatoarea destinatie de vacanta. Imbarca-te in aceasta calatoire alaturi de mine si afla care sunt cele mai frumoase locatii ce nu trebuie sa lipseasca din planurile tale viitoare de vacanta</p>
         <img src="https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg" id="poza1">
         <article>
             <button id="addImage"> Adaugă poză</button>
@@ -32,8 +32,9 @@
             <div class="poze">
             </div>
         </article>
-        
-        <form class="formular" onsubmit="validare()">
+        <button type="button" id="adaugare">Request data</button>
+        <p id="demo"></p>
+        <form class="formular" id="formularul">
             <H2>
                 Completați următorul formular:
             </H2>
@@ -73,6 +74,7 @@
         
         
         </form>
+        <Footer>
         <h2> Date despre autor</h2>
         <table class="center">
             <tr>
@@ -88,6 +90,7 @@
             <td align=center> 2</td>
             </tr>
             </table>
+          </Footer>
 
         </div>
 

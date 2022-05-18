@@ -14,14 +14,16 @@ body> div:first-of-type
     margin-left: auto;
 }
 
-
 .meniu, .meniu ul
 {
     list-style-type: none;
 }
 .meniu
 {
-    background-color: red;
+    background-image: url(https://img.graphicsurf.com/2019/10/travel-vector-free-seamless-pattern2.jpg);
+    margin:0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     
 }
 .meniu > li 
@@ -38,11 +40,11 @@ body> div:first-of-type
     display: none;
     font-size: 20px;
 }
-.navigare > li > ul >li
+.meniu > li > ul >li
 {
     border: 2px solid black; 
 }
-.navigare 
+.meniu
 {
     font-size: 40px;
 }
@@ -62,22 +64,25 @@ aside
 }
 .detalii p:first-of-type::first-letter
 {
-    font-size: 200%;
+    font-size: 100%;
 }
 .detalii p:first-of-type
 {
-    font-size: 200%;
-}
-.detalii > p
-{
+    font-size: 100%;
+
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align:justify;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .detalii p:last-of-type
 {
     text-align: center;
     font-weight: bold;
+}
+.detalii p:nth-of-type(2)
+{
+    font-size: 100%;
 }
 .detalii p:last-of-type::before
 {

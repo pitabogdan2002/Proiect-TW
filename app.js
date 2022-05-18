@@ -2,9 +2,9 @@ const express = require('express');
 const cookieParser = require("cookie-parser");
 const sessions = require('express-session');
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 const oneDay = 1000 * 60 * 60 * 24;
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 app.use(sessions({
     secret: "thisismysecrctekeyfhrgfgrfrty84fwir767",
@@ -27,19 +27,17 @@ var session;
 app.get('/',(req,res) => {
     session=req.session;
     if(session.userid){
-        res.redirect('main.html');
+        res.render('main.ejs');
     }else
     res.sendFile('views/index.html',{root:__dirname})
 });
-app.get("*",(req, res) => {
-    res.sendFile(__dirname + "/404.html");
-  });
+
 app.post('/user',(req,res) => {
     if(req.body.username == myusername && req.body.password == mypassword){
         session=req.session;
         session.userid=req.body.username;
         console.log(req.session)
-        res.redirect('main.html');
+        res.render('main.ejs');
     }
     else{
         res.send('Invalid username or password');
@@ -49,5 +47,8 @@ app.get('/logout',(req,res) => {
     req.session.destroy();
     res.redirect('/');
 });
+app.get("*",(req, res) => {
+    res.render("404.ejs");
+  });
 
 app.listen(PORT, () => console.log(`Server Running at port ${PORT}`));

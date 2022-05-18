@@ -7,10 +7,13 @@ function init()
     });
     let a = new Date();
     let text = a.toString().toLowerCase();
-    document.getElementById("header").innerHTML = "Ati accesat site-ul la date de:" + text;
+    document.getElementById("header").innerHTML = "Ati accesat site-ul la data de:" + text;
     document.getElementById("header").style.border = "2px solid black";
     document.getElementById("header").style.background= "aqua";
     document.getElementById("header").style.textAlign = "center";
+    document.getElementById("header").style.marginLeft = "360px";
+    document.getElementById("header").style.marginRight = "360px";
+    document.getElementById("header").style.marginBottom= "0px";
     const c =  document.querySelectorAll(".pictures img");
     c.forEach(element => {
         element.addEventListener("click",function(event)
