@@ -15,14 +15,12 @@ app.use(sessions({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//serving public file
 app.use(express.static(__dirname));
-// cookie parser middleware
-app.use(cookieParser());
-const myusername = 'user1'
-const mypassword = 'mypassword'
 
-// a variable to save a session
+app.use(cookieParser());
+const myusername = 'utilizator';
+const mypassword = 'parola123';
+
 var session;
 app.get('/',(req,res) => {
     session=req.session;
@@ -46,6 +44,17 @@ app.post('/user',(req,res) => {
 app.get('/logout',(req,res) => {
     req.session.destroy();
     res.redirect('/');
+});
+app.get('/user',(req,res) => {
+    session=req.session;
+    if(session.userid)
+    {
+        res.render('main.ejs');
+    }
+    else
+    {
+        res.redirect('/');
+    }
 });
 app.get("*",(req, res) => {
     res.render("404.ejs");

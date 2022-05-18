@@ -14,6 +14,23 @@ body> div:first-of-type
     margin-left: auto;
 }
 
+.logout
+ {
+    position: fixed;
+    padding: 16px;
+    right: 8px;
+    top: 8px;
+    background: orange;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+.logout:hover {
+    background: pink;
+  }
+
+
 .meniu, .meniu ul
 {
     list-style-type: none;

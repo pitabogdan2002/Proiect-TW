@@ -17,7 +17,21 @@ body> div:first-of-type
 {
    text-align: center;
 }
-
+.logout
+ {
+    position: fixed;
+    padding: 16px;
+    right: 8px;
+    top: 8px;
+    background: orange;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+.logout:hover {
+    background: pink;
+  }
 .meniu, .meniu ul
 {
     list-style-type: none;
@@ -115,6 +129,26 @@ aside
     margin-right: auto;
     border: 10px red double;
 
+}
+#gal:hover + .container > .poza.A 
+{
+    order:4;
+}
+#gal:hover + .container  .poza.B
+{
+    order:5;
+}
+#gal:hover + .container  .poza.C
+{
+    order:3;
+}
+#gal:hover + .container  .poza.D
+{
+    order:2;
+}
+#gal:hover + .container  .poza.E
+{
+    order:1;
 }
 .poza.C 
 {

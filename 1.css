@@ -23,6 +23,10 @@ body> div:first-of-type
     border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    transition: 0.5s;
+  }
+.logout:hover {
+    background: pink;
   }
 .meniu, .meniu ul
 {
@@ -125,4 +129,22 @@ input
     margin-right: auto;
     border-color: purple;
     background-color: azure;
+}
+@media screen and (max-height: 500px)
+{
+    #poza1
+    {
+        height:100px;
+        width:100px;
+    }
+}
+@media screen and (min-height: 300px)
+{
+    h1
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 2px solid black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
