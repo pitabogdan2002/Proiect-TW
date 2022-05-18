@@ -49,7 +49,15 @@ body> div:first-of-type
     font-size: 40px;
 }
 
-
+h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;
+}
+h2
+{
+    color: darkcyan;
+}
 aside
 {
     width: 30%;
@@ -117,6 +125,14 @@ aside
 {
     width: 350px;
     height: 300px;
+}
+#video::before
+{
+    content: '👇';
+}
+#video::after
+{
+    content: '👇';
 }
 #contor
 {

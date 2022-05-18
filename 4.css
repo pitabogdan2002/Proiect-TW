@@ -13,25 +13,17 @@ body> div:first-of-type
     margin-right: auto;
     margin-left: auto;
 }
-aside
-{
-    width: 30%;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-}
-#pozaaside
-{
-    width: 220px;
-    height: 180px;
-}
+
 .meniu, .meniu ul
 {
     list-style-type: none;
 }
 .meniu
 {
-    background-color: red;
+    background-image: url(https://img.graphicsurf.com/2019/10/travel-vector-free-seamless-pattern2.jpg);
+    margin:0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     
 }
 .meniu > li 
@@ -48,14 +40,40 @@ aside
     display: none;
     font-size: 20px;
 }
-.navigare > li > ul >li
+.meniu > li > ul >li
 {
     border: 2px solid black; 
 }
-.navigare 
+.meniu
 {
     font-size: 40px;
 }
+h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;
+}
+h2
+{
+    color: darkred;
+}
+.paragraf
+{
+    margin-bottom: 10px;
+}
+aside
+{
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+}
+#pozaaside
+{
+    width: 220px;
+    height: 180px;
+}
+
 
 #poza1
 {
@@ -117,6 +135,14 @@ aside
 {
     animation: titlu 5s ease-in 0s infinite reverse;
 }
+.titlu::before
+{
+    content: '🗼';
+}
+.titlu::after
+{
+    content: '🗼';
+}
 @media screen and (max-width: 700px)
 {
     .detalii
@@ -132,5 +158,14 @@ aside
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: red;
     }
+}
+.tabel, th, td
+{
+    border: 5px solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: purple;
+    background-color: azure;
 }
 
