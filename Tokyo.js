@@ -4,7 +4,7 @@ function init()
     const paragrafe = document.getElementsByClassName("paragraf");
     paragrafe[0].addEventListener("click",parinte);
     paragrafe[1].addEventListener("click",copil);
-    paragrafe[2].addEventListener("click",nepot);
+    paragrafe[2].addEventListener("click",copil2);
 }
 function copil(event) 
 {
@@ -19,7 +19,7 @@ function parinte(event)
     var element = event.currentTarget;
     element.style.color = "aqua";
 }
-function nepot(event) 
+function copil2(event) 
 {
     var element = event.currentTarget;
     element.style.color = "purple";

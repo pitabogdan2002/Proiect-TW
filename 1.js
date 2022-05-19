@@ -2,8 +2,6 @@ window.onload = init;
 function init()
 {
     document.getElementById("poza1").style.border = "10px dotted blue";
-    //var submeniuri = document.getElementsByClassName(".lista").querySelectorAll("li");
-    //submeniuri[0].style.background = "blue";
     document.getElementById('addImage').onclick = addImage;
     document.getElementById('removeImage').onclick = removeImage;
     const culori =["red","orange","yellow","aqua","pink"];
@@ -49,7 +47,7 @@ function validare()
     var varsta = document.getElementById('varsta').value;
     var mail = document.getElementById('mail').value;
     var numeRegex = /^[a-zA-Z]+$/;
-    var varstaRegex = /^([1-9]+[0-9]* | [1-9])$/;
+    var varstaRegex = /^[1-9]+[0-9]*$/;
     var mailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
     var numeRezultat = numeRegex.test(nume);
     var prenumeRezultat = numeRegex.test(prenume);
@@ -69,7 +67,7 @@ function loadDoc() {
     {
         var p = document.createElement("p");
         p.innerHTML= "Veți găsi informații despre orașul " + data[i].name +  ", care se află în următoarea țara: " + data[i].Country +".";
-        document.querySelector("#demo").append(p);
+        document.querySelector("#orase").append(p);
     }
 }
     xhttp.open("GET", "date.json");

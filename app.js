@@ -18,27 +18,27 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 app.use(cookieParser());
-const myusername = 'utilizator';
-const mypassword = 'parola123';
+const numeUtilizator = 'utilizator';
+const parola = 'parola123';
 
 var session;
 app.get('/',(req,res) => {
     session=req.session;
     if(session.userid){
-        res.render('main.ejs');
+        res.render('main.ejs', { name: req.body.username });
     }else
     res.sendFile('views/index.html',{root:__dirname})
 });
 
 app.post('/user',(req,res) => {
-    if(req.body.username == myusername && req.body.password == mypassword){
+    if(req.body.username == numeUtilizator && req.body.password == parola){
         session=req.session;
         session.userid=req.body.username;
         console.log(req.session)
-        res.render('main.ejs');
+        res.render('main.ejs', { name: req.body.username });
     }
     else{
-        res.send('Invalid username or password');
+        res.send('Parola sau nume de utilizator invalid');
     }
 })
 app.get('/logout',(req,res) => {
@@ -49,7 +49,7 @@ app.get('/user',(req,res) => {
     session=req.session;
     if(session.userid)
     {
-        res.render('main.ejs');
+        res.render('main.ejs',{name: req.body.username});
     }
     else
     {

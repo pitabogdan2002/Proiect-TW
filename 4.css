@@ -78,6 +78,9 @@ h2
 {
     margin-bottom: 10px;
 }
+#parinte::first-letter {
+    font-size: 200%;
+  }
 aside
 {
     width: 30%;
