@@ -19,5 +19,5 @@ function random(number)
 {
     return Math.floor(Math.random() * (number+1));
 }
-window.addEventListener("beforeunload", () => localStorage.clear());
+//window.addEventListener("beforeunload", () => localStorage.clear());
 
